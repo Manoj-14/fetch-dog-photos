@@ -17,7 +17,6 @@ function fetchDogPics() {
     .then(function (usableData) {
       const image = document.createElement("img");
       image.src = usableData.message;
-      console.log(image.src);
       if (container.children.length === 0) {
         container.appendChild(image);
       } else {
